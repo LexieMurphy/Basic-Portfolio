@@ -69,12 +69,19 @@ table {
     overflow: hidden;
   }
  
+  .headercontainer {
+    width: 960px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .header a{
     float: left;
     color: #777777;
     text-align: center;
-    padding: 12px;
-    padding-top: 12px;
+    padding-top: 30px;
+    padding: 10px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
@@ -85,20 +92,32 @@ table {
     font-weight: bold;
     background-color: #4aaaa5;
     color: white;
+    padding: 30px;
+  }
+
+  .header a:default {
+    background-color: white;
   }
 
   .header a:hover {
     background-color: #ddd;
-    color: #777777;
+    color: #4aaaa5;
   }
 
-  .header a.about {
+  .header a:active {
     background-color: #4aaaa5;
     color: white;
   }
 
+  .header a:focus {
+    background-color: #4aaaa5;
+    color: white;
+  }
+
+
   .header-right {
     float: right;
+    padding: 15px;
   }
 
   @media screen and (max-width: 500px) {
@@ -107,15 +126,12 @@ table {
       display: block;
       text-align: left;
     }
-    .header-right {
-      float: none;
-    }
+
   }
 
 
   #mainmiddlesection {
-    width: 960px;
-    height: 400px;
+    width: 919px;
     border: .5px solid #dddddd;
     margin-left: auto;
     margin-right: auto;
@@ -125,33 +141,41 @@ table {
     color: #777777;
     background: #ffffff;
   }
+
+  .AboutMe {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #dddddd;
+    margin-bottom: 20px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #4aaaa5;
+  }
   
   section {
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px;
     background: #333;
     align-content: center;
   }
 
-  #Profile Image {
-    float: none;
+  .profile-image {
+    float: left;
     width: 260px;
     height: 240px;
-    padding: 20px;
+    padding: 0px 30px 0px 10px;
     text-decoration-color: white;
     background: #fff;
     image: url('file:/Users/Lexie.Murphy/Desktop/Basic-Portfolio/assets/images/Lexie.jpg');
   }
   
   #division {
-    padding: 20px;
-    background: #6ea3da;
+    background: white;
     font-size: 18px;
-  
   }
   
   footer {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     border-top: 5px solid #4aaaa5;
     background: #666666;
     color: white;
